@@ -4,7 +4,7 @@
 @import "primeicons/primeicons.css";
 
 
-/* html {
+html {
   font-size: 14px;
 }
 
@@ -16,11 +16,11 @@ body {
   padding: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 
-html, body { height: 100%; }
+/* html, body { height: 100%; }
 
-body { margin: 0; font-family: Roboto, 'Helvetica Neue', sans-serif; }
+body { margin: 0; font-family: Roboto, 'Helvetica Neue', sans-serif; } */
 
 .card {
   background: var(--surface-card);

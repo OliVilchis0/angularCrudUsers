@@ -80,9 +80,21 @@
       "firstName": "Linus ",
       "lastName": "Torvalds",
       "occupation": "Software engineer",
-      "phone": "1223342312",
+      "phone": "1223342311",
       "photo": "https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg",
       "description": "He was honored, along with Shinya Yamanaka, with the 2012 Millennium Technology Prize by the Technology Academy Finland \"in recognition of his creation of a new open source operating system for computers leading to the widely used Linux kernel.\" He is also the recipient of the 2014 IEEE Computer Society Computer Pioneer Award[4] and the 2018 IEEE Masaru Ibuka Consumer Electronics Award."
+    },
+    {
+      "id": "f4f9",
+      "address": "Tenancingo de degollado",
+      "age": "28",
+      "email": "danicuervo168@gmail.com",
+      "firstName": "oliver",
+      "lastName": "vilchis",
+      "occupation": "data",
+      "phone": "7226358602",
+      "photo": "assets/users/no-image.png",
+      "description": ""
     }
   ]
 }

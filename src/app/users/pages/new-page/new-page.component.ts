@@ -29,7 +29,7 @@ export class NewPageComponent implements OnInit{
     lastName:    ['', [Validators.required, Validators.minLength(3)]],
     occupation:  ['', [Validators.required, Validators.minLength(3)]],
     phone:       ['', [Validators.required, Validators.pattern("^[0-9]{10}$")]],
-    photo:       ['', [Validators.required]],
+    photo:       [''],
     description: [''],
   });
 
@@ -55,8 +55,7 @@ export class NewPageComponent implements OnInit{
       .pipe(
         switchMap( ({ id }) => this.userService.getUserById( id ) ),
       ).subscribe( user => {
-        if ( !user ) return this.router.navigateByUrl('/')
-        console.log(user)
+        if ( !user ) return this.router.navigateByUrl('/');
         this.userForm.reset( user )
         return
       });
@@ -83,6 +82,8 @@ export class NewPageComponent implements OnInit{
 
       return;
     }
+
+    if (this.userForm.controls['photo'].value == '') this.userForm.controls['photo'].setValue('assets/users/no-image.png')
 
     this.userService.addUser( this.currentUser )
       .subscribe( user => {

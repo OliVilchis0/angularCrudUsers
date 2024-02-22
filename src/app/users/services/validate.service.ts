@@ -21,8 +21,6 @@ export class ValidateService {
 
     const errors = form.controls[field].errors || {};
 
-    console.log(errors);
-
 
     for ( const key of Object.keys(errors) ) {
       switch( key ) {

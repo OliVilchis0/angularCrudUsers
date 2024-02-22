@@ -1,6 +1,5 @@
-
-<div class="card flex justify-content-center">
-  <p-card [header]="user.firstName + ' ' + user.lastName" [subheader]="user.occupation" [style]="{ width: '380px' }">
+<div class="card">
+  <p-card [header]="user.firstName + ' ' + user.lastName" [subheader]="user.occupation" [style]="{ width: '340px' }">
     <ng-template pTemplate="header">
       <p-image  [src]="user.photo" alt="Image" width="250" height="450px"></p-image>
     </ng-template>
@@ -30,27 +29,25 @@
       </div>
     </div>
 
-      <div class="flex justify-content-center flex-wrap gap-3 mb-4">
-          <button
-            pButton
-            pRipple
-            class="p-button-primary p-button-text"
-            icon="pi pi-user-edit"
-            label="Editar"
-            [routerLink]="['/users/edit', user.id]"
-          >
-          </button>
-          <span class="spacer"></span>
-          <button
-            pButton
-            pRipple
-            class="p-button-warning p-button-text"
-            icon="pi pi-info-circle"
-            label="Mas"
-            [routerLink]="['/users', user.id]"
-          ></button>
-      </div>
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+      <button
+        pButton
+        pRipple
+        class="p-button-primary p-button-text"
+        icon="pi pi-user-edit"
+        label="Editar"
+        [routerLink]="['/users/edit', user.id]"
+      >
+      </button>
+      <span class="spacer"></span>
+      <button
+        pButton
+        pRipple
+        class="p-button-warning p-button-text"
+        icon="pi pi-info-circle"
+        label="Mas"
+        [routerLink]="['/users', user.id]"
+      ></button>
+    </div>
   </p-card>
-
-
 </div>
