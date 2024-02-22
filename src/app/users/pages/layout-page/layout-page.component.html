@@ -1,0 +1,26 @@
+<p-toolbar class="pt-6" styleClass="bg-gray-900 shadow-2" [style]="{ 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))' }">
+  <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" />
+  <div class="flex flex-wrap align-items-center gap-3">
+      <app-sidebar></app-sidebar>
+      <button
+        (click)="goHome()"
+        class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">
+        <i class="pi pi-home text-2xl"></i>
+      </button>
+      <button
+        (click)="goUserForm()"
+        class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">
+        <i class="pi pi-user text-2xl"></i></button>
+  </div>
+  <div class="flex align-items-center gap-2">
+    <p-avatar label="V" styleClass="mr-2" size="large" [style]="{ 'background-color': '#2196F3', color: '#ffffff' }"></p-avatar>
+    <span class="font-bold text-bluegray-50">OliverV@outlook.com</span>
+  </div>
+</p-toolbar>
+
+<div class="container p-7">
+
+  <router-outlet></router-outlet>
+
+</div>
+

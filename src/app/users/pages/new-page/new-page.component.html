@@ -1,0 +1,131 @@
+<h1 class="flex justify-content-center flex-wrap">
+  {{ currentUser.id ? 'Editar' : 'Nuevo' }} Usuario
+</h1>
+<p-divider></p-divider>
+
+<p-toast></p-toast>
+
+<div class="card">
+  <div class="flex flex-column md:flex-row">
+      <div class="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
+
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="username">Firstname</label>
+              <input pInputText id="username" aria-describedby="username-help" formControlName="firstName"  />
+              <small class="text-red-500" *ngIf="validateField( 'firstName' )" id="age-help">{{ fieldErrors( 'firstName' ) }}</small>
+            </div>
+
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="lastname">lastName</label>
+              <input pInputText id="lastname" aria-describedby="lastname-help" formControlName="lastName"  />
+              <small class="text-red-500" *ngIf="validateField( 'lastName' )" id="lastname-help">{{ fieldErrors( 'lastName' ) }}</small>
+            </div>
+
+
+          </div>
+
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="age">Age</label>
+              <input pInputText id="age" aria-describedby="age-help"  formControlName="age" />
+              <small class="text-red-500" *ngIf="validateField( 'age' )" id="age-help">{{ fieldErrors( 'age' ) }}</small>
+            </div>
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="phone">Phone</label>
+              <input pInputText id="phone" aria-describedby="phone-help"  formControlName="phone" />
+              <small class="text-red-500" *ngIf="validateField( 'phone' )" id="phone-help">{{ fieldErrors( 'phone' ) }}</small>
+            </div>
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="accupation">Occupation</label>
+              <input pInputText id="occupation" aria-describedby="occupation-help"  formControlName="occupation" />
+              <small class="text-red-500" *ngIf="validateField( 'occupation' )" id="occupation-help">{{ fieldErrors( 'occupation' ) }}</small>
+            </div>
+
+          </div>
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="email">Email</label>
+              <input pInputText id="email" aria-describedby="email-help"  formControlName="email" />
+              <small class="text-red-500" *ngIf="validateField( 'email' )" id="email-help">{{ fieldErrors( 'email' ) }}</small>
+            </div>
+
+          </div>
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="address">Address</label>
+              <input pInputText id="address" aria-describedby="address-help"  formControlName="address" />
+              <small class="text-red-500" *ngIf="validateField( 'address' )" id="address-help">{{ fieldErrors( 'address' ) }}</small>
+            </div>
+
+          </div>
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="photo">Photo</label>
+              <input pInputText id="photo" aria-describedby="photo-help"  formControlName="photo" />
+              <small class="text-red-500" *ngIf="validateField( 'photo' )" id="photo-help">{{ fieldErrors( 'photo' ) }}</small>
+            </div>
+
+          </div>
+
+          <div class="flex flex-column md:flex-row gap-3">
+
+            <div class="col flex flex-column gap-2">
+              <label htmlFor="description">Description</label>
+              <textarea rows="5" cols="30" pInputTextarea formControlName="description"></textarea>
+              <small class="text-red-500" *ngIf="validateField( 'description' )" id="description-help">{{ fieldErrors( 'description' ) }}</small>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+
+          <button
+            pButton
+            pRipple
+            [label]="currentUser.id ? 'Edit' : 'Add'"
+            (click)="onSubmit()"
+            [class]="currentUser.id ? 'p-button-success' : 'p-button-primary'">
+          </button>
+
+          <button
+            *ngIf="currentUser.id"
+            pButton
+            pRipple
+            label="Delete"
+            class="p-button-danger"
+            (click)="onDeleteUser()"
+          ></button>
+
+        </div>
+
+      </div>
+      <div class="w-full md:w-2">
+          <p-divider layout="vertical" styleClass="hidden md:flex"><b></b></p-divider>
+          <p-divider layout="horizontal" styleClass="flex md:hidden" [align]="'center'"><b>OR</b></p-divider>
+      </div>
+      <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+        <p-image [src]=" currentUser.id ? currentUser.photo : 'assets/users/no-image.png'"  alt="Image" width="250"></p-image>
+      </div>
+
+      <div class="card">
+        <p-messages [(value)]="messages!" [enableService]="false" [closable]="false"></p-messages>
+      </div>
+  </div>
+</div>

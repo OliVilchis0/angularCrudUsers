@@ -1,0 +1,37 @@
+<h1 class="flex justify-content-center flex-wrap">
+  About {{ user?.firstName + ' ' + user?.lastName }}
+</h1>
+<p-divider></p-divider>
+<div class="card flex">
+  <p>
+      <strong>Name: </strong>{{ user?.firstName + ' ' + user?.lastName }}
+      <br>
+      <strong>Age: </strong>{{ user?.age }}
+      <br>
+      <strong>Occupation: </strong>{{ user?.occupation }}
+      <br>
+      <strong>Phone: </strong>{{ user?.phone }}
+      <br>
+      <strong>Email: </strong>{{ user?.email }}
+      <br>
+      {{user?.description}}
+  </p>
+  <p-divider layout="vertical"></p-divider>
+  <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+    <p-image [src]=" user?.id ? user?.photo : 'assets/users/no-image.png'" alt="Image" width="250"></p-image>
+  </div>
+</div>
+
+<div class="flex justify-content-center flex-wrap gap-3 mb-4">
+
+  <button
+    pButton
+    pRipple
+    label="Back"
+    class="p-button-primary"
+    (click)="goBack()"
+  ></button>
+
+</div>
+
+

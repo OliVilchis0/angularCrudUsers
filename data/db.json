@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": "1d6a",
+      "address": "Val-d'Oise, France",
+      "age": 61,
+      "email": "sakarian@gmail.com",
+      "firstName": "Simon",
+      "lastName": "Abkarian",
+      "occupation": "Actor",
+      "phone": "7823341214",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Simon_Abkarian_2014.jpg/220px-Simon_Abkarian_2014.jpg",
+      "description": "Born in Gonesse, Val d'Oise, of Armenian descent, Abkarian spent his childhood in Lebanon. He moved to Los Angeles, where he joined an Armenian theater company managed by Gerald Papazian. He returned to France in 1985, settling in Paris. He took classes at the Acting International school, then he joined Ariane Mnouchkine's Théâtre du Soleil and played, among others, in L'Histoire terrible mais inachevée de Norodom Sihanouk, roi du Cambodge (\"The Terrible but Unfinished Story of Norodom Sihanouk, King of Cambodia\") by Hélène Cixous, and in the House of Atreus four-play cycle by Aeschylus."
+    },
+    {
+      "id": "d578",
+      "address": "Simferopol, Ukrainian SSR, Soviet Union",
+      "age": "37",
+      "email": "ousyk@gmail.com",
+      "firstName": "Oleksandr ",
+      "lastName": "Usyk",
+      "occupation": "professional boxer",
+      "phone": "1234567890",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/2022_-_Centre_Stage_EN1_4500_%2852471602047%29_%28cropped%29.jpg/220px-2022_-_Centre_Stage_EN1_4500_%2852471602047%29_%28cropped%29.jpg",
+      "description": "Oleksandr Oleksandrovych Usyk (Ukrainian: Олекса́ндр Олекса́ндрович У́сик; born 17 January 1987) is a Ukrainian professional boxer. He has held multiple world championships in two weight classes, including the unified[a] heavyweight titles since 2021, and the Ring magazine title since 2022. He has also held the International Boxing Organization (IBO) title since 2021. Previously, he held the undisputed[b] cruiserweight championship from 2018 to 2019, being the first boxer in that division to hold all four major world titles"
+    },
+    {
+      "id": "a23",
+      "address": "San Juan, Puerto Rico",
+      "age": "53",
+      "email": "lgallegos@gmail.com",
+      "firstName": "Luis Miguel",
+      "lastName": "Gallego",
+      "occupation": "Singer",
+      "phone": "0998877665",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Luis_Miguel.jpg/220px-Luis_Miguel.jpg",
+      "description": "Luis Miguel Gallego Basteri (born 19 April 1970) is a Mexican singer and record producer. Born in Puerto Rico to an Italian mother and a Spanish father, he is often referred to as El Sol de Mexico (The Sun of Mexico), derived from the nickname his mother gave him as a child: \"Mi sol\" (My sun). Luis Miguel has sung in multiple genres and styles, including pop songs, ballads, boleros, tangos, jazz, big band, and mariachi. Luis Miguel is also recognized as the only Latin singer of his generation to not cross over to the Anglo market during the \"Latin Explosion\" in the 1990s."
+    },
+    {
+      "id": "b678",
+      "address": "Omaha, Nebraska, U.S.",
+      "age": "93",
+      "email": "wbuffet@gmail.com",
+      "firstName": "Warren ",
+      "lastName": "Buffett",
+      "occupation": "businessman",
+      "phone": "0102039485",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/220px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg",
+      "description": "Is an American businessman, investor, and philanthropist who currently serves as the co-founder, chairman and CEO of Berkshire Hathaway. As a result of his immense investment success, Buffett is one of the best-known investors in the world. As of January 2024, he had a net worth of $122 billion, making him the tenth-richest person in the world."
+    },
+    {
+      "id": "584a",
+      "address": "Lanús, Argentina",
+      "age": "60",
+      "email": "dmaradona@gmail.com",
+      "firstName": "Diego",
+      "lastName": "Maradona",
+      "occupation": "soccer player",
+      "phone": "1223123445",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/220px-Maradona-Mundial_86_con_la_copa.JPG",
+      "description": "Diego Armando Maradona (Spanish: [ˈdjeɣo maɾaˈðona]; 30 October 1960 – 25 November 2020) was an Argentine professional football player and manager. Widely regarded as one of the greatest players in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th Century award."
+    },
+    {
+      "id": "4fae",
+      "address": "Mexico City, Mexico",
+      "age": "84",
+      "email": "opaz@gmail.com",
+      "firstName": "Octavio ",
+      "lastName": "Paz",
+      "occupation": "Writer",
+      "phone": "7474488392",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Octavio_Paz_-_1988_Malm%C3%B6.jpg/220px-Octavio_Paz_-_1988_Malm%C3%B6.jpg",
+      "description": "Octavio Paz Lozano (March 31, 1914 – April 19, 1998) was a Mexican poet and diplomat. For his body of work, he was awarded the 1977 Jerusalem Prize, the 1981 Miguel de Cervantes Prize, the 1982 Neustadt International Prize for Literature, and the 1990 Nobel Prize in Literature."
+    },
+    {
+      "id": "69f7",
+      "address": "Helsinki, Finland",
+      "age": "54",
+      "email": "ltorvalds@gmail.com",
+      "firstName": "Linus ",
+      "lastName": "Torvalds",
+      "occupation": "Software engineer",
+      "phone": "1223342312",
+      "photo": "https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg",
+      "description": "He was honored, along with Shinya Yamanaka, with the 2012 Millennium Technology Prize by the Technology Academy Finland \"in recognition of his creation of a new open source operating system for computers leading to the widely used Linux kernel.\" He is also the recipient of the 2014 IEEE Computer Society Computer Pioneer Award[4] and the 2018 IEEE Masaru Ibuka Consumer Electronics Award."
+    }
+  ]
+}
